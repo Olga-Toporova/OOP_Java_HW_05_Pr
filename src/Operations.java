@@ -1,6 +1,9 @@
 public class Operations implements OperationsInterface {
     int choice;
 
+    // Блок работы с рациональными числами
+
+    //Выбор операции
     public Operations(int ch) {
         this.choice = ch;
 
@@ -26,31 +29,35 @@ public class Operations implements OperationsInterface {
     public void sum() {
         double a = TryInput.inputNumber();
         double b = TryInput.inputNumber();
-        Logging.logWrite("Рациональные числа | Операция: " + a + " + " + b + " = " + (a + b));
-        Output.out(a + b);
+        double result = a + b;
+        Output.out(result);
+        Output.toLog("Рациональные числа", a, b, "+", result); // логирование операции
     }
 
     @Override
     public void sub() {
         double a = TryInput.inputNumber();
         double b = TryInput.inputNumber();
-        Logging.logWrite("Рациональные числа | Операция: " + a + " - " + b + " = " + (a - b));
-        Output.out(a - b);
+        double result = a - b;
+        Output.toLog("Рациональные числа", a, b, "-", result); // логирование операции
+        Output.out(result);
     }
 
     @Override
     public void mult() {
         double a = TryInput.inputNumber();
         double b = TryInput.inputNumber();
-        Logging.logWrite("Рациональные числа | Операция: " + a + " * " + b + " = " + (a * b));
-        Output.out(a * b);
+        double result = a * b;
+        Output.out(result);
+        Output.toLog("Рациональные числа", a, b, "*", result); // логирование операции
     }
 
     @Override
     public void div() {
         double a = TryInput.inputNumber();
         double b = TryInput.excep0();
-        Logging.logWrite("Рациональные числа | Операция: " + a + " / " + b + " = " + (a / b));
-        Output.out(a / b);
+        double result = a / b;
+        Output.out(result);
+        Output.toLog("Рациональные числа", a, b, "/", result); // логирование операции
     }
 }

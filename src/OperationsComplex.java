@@ -1,6 +1,9 @@
 public class OperationsComplex implements OperationsComplexInterface {
     int choice;
 
+    // Блок работы с комплексными числами
+
+    //Выбор операции
     public OperationsComplex(int ch) {
         this.choice = ch;
 
@@ -31,8 +34,9 @@ public class OperationsComplex implements OperationsComplexInterface {
 
         double res = re1 + re2;
         double ims = im1 + im2;
-        Logging.logWrite("Комплексные числа | Операция: (" + re1 + " + " + im1 + "j) + (" + re2 + " + " + im2 + "j) = " + res + " + " + ims + "j");
+
         Output.out(res + " + " + ims + "j");
+        Output.toLog("Комплексные числа", re1, im1, re2, im2, "+", res, ims); // логирование операции
     }
 
     @Override
@@ -44,8 +48,8 @@ public class OperationsComplex implements OperationsComplexInterface {
 
         double res = re1 - re2;
         double ims = im1 - im2;
-        Logging.logWrite("Комплексные числа | Операция: (" + re1 + " + " + im1 + "j) - (" + re2 + " + " + im2 + "j) = " + res + " + " + ims + "j");
         Output.out(res + " + " + ims + "j");
+        Output.toLog("Комплексные числа", re1, im1, re2, im2, "-", res, ims); // логирование операции
     }
 
     @Override
@@ -57,8 +61,8 @@ public class OperationsComplex implements OperationsComplexInterface {
 
         double res = re1 * re2;
         double ims = im1 * im2;
-        Logging.logWrite("Комплексные числа | Операция: (" + re1 + " + " + im1 + "j) * (" + re2 + " + " + im2 + "j) = " + res + " + " + ims + "j");
         Output.out(res + " + " + ims + "j");
+        Output.toLog("Комплексные числа", re1, im1, re2, im2, "*", res, ims); // логирование операции
     }
 
     @Override
@@ -69,8 +73,8 @@ public class OperationsComplex implements OperationsComplexInterface {
         double im2 = TryInput.excep0();
         double res = re1 / re2;
         double ims = im1 / im2;
-        Logging.logWrite("Комплексные числа | Операция: (" + re1 + " + " + im1 + "j) / (" + re2 + " + " + im2 + "j) = " + res + " + " + ims + "j");
         Output.out(res + " + " + ims + "j");
+        Output.toLog("Комплексные числа", re1, im1, re2, im2, "/", res, ims); // логирование операции
     }
 
 }
