@@ -3,7 +3,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Date;
 
-
+// Блок обеспечивающий запись действий пользователя в файл log.txt
 public class Logging {
     static Date date = new Date();
 
