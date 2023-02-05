@@ -10,7 +10,7 @@ public class Logging {
     public static void logWrite(String action) {
 
         try {
-            FileWriter fileWriter = new FileWriter("log.txt");
+            FileWriter fileWriter = new FileWriter("log.txt", true);
             PrintWriter printWriter = new PrintWriter(fileWriter);
             printWriter.println("---------------------------------------------------");
             printWriter.println("| " + date + " | " + action + " |");

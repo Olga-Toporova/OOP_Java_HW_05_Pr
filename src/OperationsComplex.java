@@ -18,7 +18,7 @@ public class OperationsComplex implements OperationsComplexInterface {
         }
         if (ch == 0) {
             Logging.logWrite("Возврат в предыдущее меню");
-            Main.menu();
+            Menu.menu();
         }
     }
 
