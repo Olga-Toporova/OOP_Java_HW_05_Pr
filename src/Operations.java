@@ -26,31 +26,31 @@ public class Operations implements OperationsInterface {
     public void sum() {
         double a = TryInput.inputNumber();
         double b = TryInput.inputNumber();
-        Output.out(a + b);
         Logging.logWrite("Рациональные числа | Операция: " + a + " + " + b + " = " + (a + b));
+        Output.out(a + b);
     }
 
     @Override
     public void sub() {
         double a = TryInput.inputNumber();
         double b = TryInput.inputNumber();
-        Output.out(a - b);
         Logging.logWrite("Рациональные числа | Операция: " + a + " - " + b + " = " + (a - b));
+        Output.out(a - b);
     }
 
     @Override
     public void mult() {
         double a = TryInput.inputNumber();
         double b = TryInput.inputNumber();
-        Output.out(a * b);
         Logging.logWrite("Рациональные числа | Операция: " + a + " * " + b + " = " + (a * b));
+        Output.out(a * b);
     }
 
     @Override
     public void div() {
         double a = TryInput.inputNumber();
         double b = TryInput.excep0();
-        Output.out(a / b);
         Logging.logWrite("Рациональные числа | Операция: " + a + " / " + b + " = " + (a / b));
+        Output.out(a / b);
     }
 }

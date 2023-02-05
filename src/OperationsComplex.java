@@ -31,8 +31,8 @@ public class OperationsComplex implements OperationsComplexInterface {
 
         double res = re1 + re2;
         double ims = im1 + im2;
-        Output.out(res + " + " + ims + "j");
         Logging.logWrite("Комплексные числа | Операция: (" + re1 + " + " + im1 + "j) + (" + re2 + " + " + im2 + "j) = " + res + " + " + ims + "j");
+        Output.out(res + " + " + ims + "j");
     }
 
     @Override
@@ -44,8 +44,8 @@ public class OperationsComplex implements OperationsComplexInterface {
 
         double res = re1 - re2;
         double ims = im1 - im2;
-        Output.out(res + " + " + ims + "j");
         Logging.logWrite("Комплексные числа | Операция: (" + re1 + " + " + im1 + "j) - (" + re2 + " + " + im2 + "j) = " + res + " + " + ims + "j");
+        Output.out(res + " + " + ims + "j");
     }
 
     @Override
@@ -57,8 +57,8 @@ public class OperationsComplex implements OperationsComplexInterface {
 
         double res = re1 * re2;
         double ims = im1 * im2;
-        Output.out(res + " + " + ims + "j");
         Logging.logWrite("Комплексные числа | Операция: (" + re1 + " + " + im1 + "j) * (" + re2 + " + " + im2 + "j) = " + res + " + " + ims + "j");
+        Output.out(res + " + " + ims + "j");
     }
 
     @Override
@@ -69,8 +69,8 @@ public class OperationsComplex implements OperationsComplexInterface {
         double im2 = TryInput.excep0();
         double res = re1 / re2;
         double ims = im1 / im2;
-        Output.out(res + " + " + ims + "j");
         Logging.logWrite("Комплексные числа | Операция: (" + re1 + " + " + im1 + "j) / (" + re2 + " + " + im2 + "j) = " + res + " + " + ims + "j");
+        Output.out(res + " + " + ims + "j");
     }
 
 }
