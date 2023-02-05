@@ -1,1 +1,1 @@
-Точка входа: src/Main
+Точка входа: src/Main.java
