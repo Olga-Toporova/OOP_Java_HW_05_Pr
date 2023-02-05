@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class TryInput {
-
+ // Ввод числа
     public static double inputNumber() {
         Scanner sc = new Scanner(System.in);
         System.out.println("Введите число: ");
@@ -9,6 +9,7 @@ public class TryInput {
         return a;
     }
 
+    // Проверка ввода в окне выбора типа чисел
     public static int choice1() {
         Scanner sc = new Scanner(System.in);
         int a = 0;
@@ -26,6 +27,7 @@ public class TryInput {
         return a;
     }
 
+    // Проверка ввода в окне выбора типа операции
     public static int choice2() {
         Scanner sc = new Scanner(System.in);
         int a = 0;
@@ -43,6 +45,7 @@ public class TryInput {
         return a;
     }
 
+    // Проверка ввода на "0"
     public static double excep0() {
         boolean is_zero = true;
         double a = 0;

@@ -1,7 +1,6 @@
 public class Output {
 
-    //Блок вывода информации в терминал и в log.txt
-
+    //Вывод результата в терминал
     static void out(Double res) {
         System.out.println(res);
     }
@@ -10,6 +9,7 @@ public class Output {
         System.out.println(result);
     }
 
+    // Сборка информации для логирования
     static void toLog(String type, double a, double b, String op, double result ){
         Logging.logWrite(type + " | Операция: " + a + " " + op + " " + b + " = " + (a + b));
         Menu.menu();
